@@ -13,3 +13,6 @@ dtFrame = pd.read_excel('imiona.xlsx', header=0)
 # Pomocniczy dataframe
 dt1=dtFrame.loc[(dtFrame['Rok']>2005) & (dtFrame['Rok']<2010)]
 # print(dt1['Liczba'].sum())
+# Pomocniczy dataframe
+dt2 = dtFrame.loc[(dtFrame['Rok'] == 2000) & (dtFrame['Plec'] == 'M')]
+# print(dt2['Liczba'].sum())
