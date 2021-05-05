@@ -16,3 +16,12 @@ dt1=dtFrame.loc[(dtFrame['Rok']>2005) & (dtFrame['Rok']<2010)]
 # Pomocniczy dataframe
 dt2 = dtFrame.loc[(dtFrame['Rok'] == 2000) & (dtFrame['Plec'] == 'M')]
 # print(dt2['Liczba'].sum())
+
+
+# Zad3
+ddFrame = pd.read_csv('zamowienia.csv', header=0, sep=';', decimal=',')
+# print(ddFrame)
+# print(ddFrame['Sprzedawca'].drop_duplicates())
+# Pomocniczy dataframe żeby wyeliminować problem z data type
+dd1 = ddFrame['Utarg']
+# print(dd1.astype(float).nlargest(5,keep='all'))
